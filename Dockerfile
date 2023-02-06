@@ -2,6 +2,8 @@ FROM python:3
 
 ARG command="--version"
 
+RUN git config --add --global safe.directory '*'
+
 COPY entrypoint.sh /entrypoint.sh
 
 RUN apt-get update -y
