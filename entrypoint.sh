@@ -2,6 +2,6 @@
 
 git config --add --global safe.directory '*'
 
-command="eb $1 --debug -v"
+command="eb $1"
 
 $command
